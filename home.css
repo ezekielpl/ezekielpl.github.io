@@ -1,0 +1,226 @@
+/*NAVIGATION BAR*/
+.navigasi	{
+	background-color: #111111;
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+	z-index: 1000;
+	border-width: 0.001px;
+	border-style: solid;
+	border-color: white;
+}
+
+.navleft	{
+	width: 45%;
+	height: 60px;
+	border-width: 0.001px;
+	border-style: solid;
+	border-color: white;
+	margin-left: 5%;
+}
+
+.navright	{
+	width: 45%;
+	height: 60px;
+	border-width: 0.001px;
+	border-style: solid;
+	border-color: white;
+	margin-left: 0%;
+}
+
+.navleft , .navright	{
+	display: inline-block;
+}
+
+.navigasi h1, h2{
+	line-height: 2px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.testbut	{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	padding: 0%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-image: linear-gradient(to right,#dc5534, #dc7633, #f4d03f);
+}
+
+.navigasi h1 {
+	color: white;
+	font-family: arial, verdana, sans-serif;
+	font-size: 24px;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+.navigasi h2 {color: white;
+	font-family: arial, verdana, sans-serif;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/*INTRO*/
+body	{
+	margin: 0;
+	padding:0;
+}
+
+.part1	{
+	top: 0;
+    left: 0;
+    right: 0;
+	height: auto;
+	padding: 4%;
+	background-image: url(pict/orangebackground.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.introduction	{
+	width: 80%;
+	height: 20%;
+	background-color: white;
+	background: rgba(255, 255, 255, 0.85);
+	margin-top: 5%;
+	margin-left: 5%;
+	padding: 3%;
+}
+
+.media{
+	display: inline-block;
+}
+
+.col-foto, .col-keterangan{
+	display: inline-block;
+}
+
+.col-keterangan{
+	width: 70%;
+	height: auto;
+}
+
+.logo {
+  	padding: 4px;
+  	width: 150px;
+}
+
+.introduction	h3, h4{
+	line-height: 20px;
+	color: black;
+	margin: 0px;
+}
+
+.introduction h3 {
+	font-family: "arial", verdana, sans-serif;
+	font-size: 15px;
+	font-variant: small-caps;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+
+.introduction h4 {
+	font-family: "arial", verdana, sans-serif;
+	font-size: 35px;
+	text-align: left;
+	font-variant: small-caps;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*FOOTER BAR*/
+.footer	{
+	top: 0;
+    left: 0;
+    right: 0;
+	height: auto;
+	background-color: #111111;
+	padding: 10px;
+}
+
+.footer h5 {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 968px){
+	.navleft{
+		width: 45%;
+	}
+
+	.navleft h1{
+		font-size: 20px
+	}
+
+	.navleft h2{
+		font-size: 10px
+	}
+
+	.dropbtn {
+		font-size: 15px;
+	}
+
+	.logo{
+		margin-left: 10%;
+	}
+
+	.col-keterangan{
+		text-align: center;
+	}
+
+	.col-keterangan h4{
+		text-align: center;
+	}
+}

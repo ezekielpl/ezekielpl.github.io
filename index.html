@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="solusi.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<style type="text/css">
+		@media only screen and (max-width: 768px) {
+  		/* Mobile phone: */
+		  [class*="col-"]
+		  {width: 100%;
+  		}
+}
+	</style>
+</head>
+
+<body onload="move1() , move2(), move3(), move4()">
+	
+	<!-- NAVIGATION BAR -->
+	<div class="navigasi">
+		<div class="navleft">
+			<h1>Website</h1>
+			<h2>Perusahaan A24</h2>
+		</div>
+		<div class="navright">
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn">Home</button>
+				<div class="dropdown-content">
+					<a href="#Bagian1">Intro</a>
+					<button onclick="move1() , move2(), move3(), move4()" class="testbut">
+						<a href="#Bagian2">Solusi Kami</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- INTRO -->
+	<div id="Bagian1" class="part1">
+		<div  class="introduction">
+			<div class="col-foto">
+				<img class="logo" src="pict/logo.jpg" style="width:240px;height:320px;margin-right:15px;">
+			</div>
+			
+			<div class="col-keterangan">
+				<h3>Selamat datang di website</h3>
+				<h4>Perusahaan IT Nomor #1 di Indonesia</h4> <br>
+				<p>Kami adalah penyedia jasa solusi IT terbaik di nusantara. Sampai hari ini, kami telah memiliki 5 cabang yang tersebar di seluruh penjuru Indonesia. Kami diperlengkapi dengan amunisi para programmer muda profesional yang memiliki passion yang sama untuk mengembangkan industri digital. Fokus kami adalah pembuatan / pengembangan software baik menggunakan platfrom Web Based maupun mobile apps seperti Android dan IOS. Tidak hanya itu, kami pun menyediakan jasa pengembangan hardware seperti Internet of Things. Kami tidak menjual produk jadi, karena kami percaya bahwa masing-masing perusahaan ataupun perorangan memiliki kebutuhan spesifik terkait aplikasi yang akan dibuat.</p>
+				<p>Kami dengan senang hati akan membantu anda dalam menyelesaikan permasalahan yang Anda rasakan. Silahkan kontak kami melalui media sosial maupun nomor Whatsapp di bawah ini. </p>
+
+				<ul class="socialmedia">
+					<a href="https://www.linkedin.com"><img src="pict/linkedin.png" style="width:30px;height:30px"></a>
+					<a href="https://www.facebook.com/"><img src="pict/facebook.png" style="width:30px;height:30px"></a>
+					<a href="https://api.whatsapp.com/"><img src="pict/whatsapp.png" style="width:30px;height:30px"></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- SOLUSI KAMI -->
+	<div id="Bagian2" class="part2">
+		<div class="ability">
+			<div class="col-container">
+				<h4><b>Solusi IT yang Kami Kuasai</b></h4> <br>
+
+				<h5>Internet of Things</h5>
+				<div class="meter">
+				<span id="myBar1" onload="move1()" style="width: 35%; color: white; padding-left: 1%">35%</span>
+				</div> <br>
+
+				<h5>Front End Website</h5>
+				<div class="meter">
+				<span id="myBar2" onload="move2()" style="width: 35%; color: white; padding-left: 1%">35%</span>
+				</div> <br>
+
+				<h5>Back End Website</h5>
+				<div class="meter">
+				<span id="myBar3" onload="move3()" style="width: 35%; color: white; padding-left: 1%">35%</span>
+				</div> <br>
+
+				<h5>Mobile Apps</h5>
+				<div class="meter">
+				<span id="myBar4" onload="move4()" style="width: 35%; color: white; padding-left: 1%">35%</span>
+				</div> <br>
+			</div>
+
+			<script>
+				function move1() {
+				var elem = document.getElementById("myBar1");   
+				var width = 0;
+				var id = setInterval(frame, 20);
+				function frame() {
+					if (width >= 75) {
+					clearInterval(id);
+					} else {
+					width++; 
+					elem.style.width = width + '%'; 
+					elem.innerHTML = width * 1  + '%';
+					}
+				}
+				}
+
+				function move2() {
+				var elem = document.getElementById("myBar2");   
+				var width = 0;
+				var id = setInterval(frame, 20);
+				function frame() {
+					if (width >= 45) {
+					clearInterval(id);
+					} else {
+					width++; 
+					elem.style.width = width + '%'; 
+					elem.innerHTML = width * 1  + '%';
+					}
+				}
+				}
+
+				function move3() {
+				var elem = document.getElementById("myBar3");   
+				var width = 0;
+				var id = setInterval(frame, 20);
+				function frame() {
+					if (width >= 40) {
+					clearInterval(id);
+					} else {
+					width++; 
+					elem.style.width = width + '%'; 
+					elem.innerHTML = width * 1  + '%';
+					}
+				}
+				}
+
+				function move4() {
+				var elem = document.getElementById("myBar4");   
+				var width = 0;
+				var id = setInterval(frame, 20);
+				function frame() {
+					if (width >= 55) {
+					clearInterval(id);
+					} else {
+					width++; 
+					elem.style.width = width + '%'; 
+					elem.innerHTML = width * 1  + '%';
+					}
+				}
+				}
+			</script>
+		</div>
+	</div>
+
+	<!-- FOOTER BAR -->
+	<div class="footer">
+		<h5>Kelompok A24 | CEB CfDS x Progate 2020</h5>
+	</div>
+
+</body>
+</html>
